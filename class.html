@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class emp{
+            constructor(id,name){
+                this.id=id;
+                this.name=name
+            }
+            detail(){
+               document.write(this.id +" " +this.name+"<br> ");
+                //document.write(this.id +" "+this.name+"<br>");
+            }
+        }
+        var e1=new emp (101, "haliima");
+        var e2 = new emp (102, "sacdiyo");
+        e1.detail();
+        e2.detail();
+    </script>
+</body>
+</html>

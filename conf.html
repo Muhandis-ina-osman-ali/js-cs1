@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pass ()
+        {
+            var v = confirm("are you want to send money");
+            if (v == true){
+                var pwd = prompt("geli passwordkaga");
+            if(pwd == 123){
+                var phone = prompt("enter the phone you wnt to send money");
+                var money = prompt("enter the amount")
+                var info ="Phone You sent Money: "+phone+"<br>"+"Amount is: "+money;
+                document.write(info);
+            }
+            else{
+                alert("please check your pass")
+            }
+            }
+           else{
+            alert("canceled")
+           }
+        
+        }
+        
+    </script>
+    <input type="button" value="send" onclick="pass()"/>
+</body>
+</html>

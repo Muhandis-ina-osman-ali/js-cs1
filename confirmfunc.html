@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function pass()
+    {
+        var v = confirm("Are you sure You want to send money");
+        if(v == true)
+        {
+           var pwd = prompt("please enter your pwd");
+           if(pwd ==  123)
+           {
+              var phone = prompt("Please enter Phone  You want to send money ");
+              var m = prompt("Please entery Amount ");
+              var info ="Phone You sent Money: "+phone+"<br>"+"Amount is: "+m;
+              document.write(info);
+           }
+           else{
+            alert("Please check your password!");
+           }
+        
+
+        }
+        else{
+            alert("Canceled ");
+        }
+
+    }
+   </script> 
+   <input type="button" value="Send" onclick="pass()"/>
+</body>
+</html>
